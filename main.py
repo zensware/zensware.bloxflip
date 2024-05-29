@@ -1,5 +1,8 @@
 import json, os, time, requests, cloudscraper
 from discord_webhook import DiscordWebhook, DiscordEmbed
+from keep_alive import keep_alive
+
+keep_alive.keep_alive()
 
 webhook_enable = os.getenv['webhook_enabled']
 webhookurl = os.getenv['webhook']
